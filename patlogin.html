@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>patient login</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                /* padding:20px; */
+                padding: 50 500 10 500;
+                margin:0 25 0 25;
+                color: black;
+                /* border-radius: 25px; */
+                 /* background-image: url('hos2.jpeg'); */
+                 background-image: url(LOGINBG.jpg);
+                 background-repeat: no-repeat;
+                 height: 100%;
+                 background-size: cover;
+
+
+            }
+            *{
+                box-sizing: border-box;
+                border-radius: 20px;
+            }
+            .container
+            {
+                padding: 16px;
+                background-color: white;
+                /* border: 3px solid grey; */
+                box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.39);
+                
+            }
+            input[type=text],input[type=password]
+            {
+                width: 50%;
+                padding:16px;
+                /* padding:0 30 0 0; */
+                border: none;
+                background: #f1f1f1;
+                margin: 5 0 22 0;
+                
+                /* padding: 0 50 0 50; */
+            }
+            input[type=text]:focus,input[type=password]:focus
+            {
+                background-color: #ddd;
+            }
+            hr{
+                border:1px solid #f1f1f1;
+                margin-bottom:25px;
+                margin-right: 710px;
+
+            }
+            .registration
+            {
+                width:25%;
+                /* background-color: #04AA6D; */
+                background-color:black;
+                color: white;
+                cursor: pointer;
+                padding: 15px 18px;
+                opacity: 0.9;
+        
+            }
+            .registration:hover
+            {
+                opacity:1;
+            }
+            a{
+                color:dodgerblue;
+            
+            }
+            .container-signin{
+                text-align: center;
+                background-color:black;
+            }
+
+
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body> 
+
+        <!-- <h1 style="color: blue;">Hospital Mangement system</h1> -->
+        <form action="http://localhost/sample/index6.php/" method="GET">
+            <!-- <div class="container"  style="background-image: url('hos2.jpeg'); opacity:1s;"> -->
+                <div class="container" style="background-color: rgba(214, 214, 214, 0.795);">
+                <h2 style="color:black;">HMS|patient login</h2>
+                <P>Please fill in this form to login to your account</P>
+                <hr>
+                <label for="email"><b>Enter Email</b></label><br>
+                <input type="text" placeholder="Enter email" id="email" name="email" required><br>
+                <label for="psw"><b>Enter password</b></label><br>
+                <input type="password" placeholder="Enter password"  id="psw" name="psw" required><br>
+                <label for="psw-repeat"><b>Re-enter password</b></label><br>
+                <input type="password" placeholder="Re-enter password" id="psw-repeat" name="psw-repeat" required>
+                <!-- <p><b>Creat account </b><a href="creat account.html">Creat account</a>.</p>  -->
+                <p>creat account?<a href="creat account patlogin.html">creat account</a></p>
+                <button type="submit" class="registration" name="submit" >login</button>
+                <!-- <button onclick="document.location='creat account.html'" type="submit" class="registration"> signup </a></button><br><br> -->
+                <!-- <button class="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
+               <P><b>Forget password?</b> <a href="#link">click here!!</a></P>
+
+                <!-- <p>designed by-subash k</p> -->
+            </div>
+            <!-- <div class="container-signin">
+                <p>creat account?<a href="#link">creat account</a></p>
+            </div> -->
+        </form>
+
+
+    </body>
+</html>

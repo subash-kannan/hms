@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+                padding:20px;
+                margin:0 150 0 150;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            .container
+            {
+                padding: 16px;
+                background-color: white;
+            }
+            input[type=text],input[type=password]
+            {
+                width: 75%;
+                padding:16px;
+                border: none;
+                background: #f1f1f1;
+                margin: 5 0 22 0;
+            }
+            input[type=text]:focus,input[type=password]:focus
+            {
+                background-color: #ddd;
+            }
+            hr{
+                border:1px solid #f1f1f1;
+                margin-bottom:25px;
+
+            }
+            .registration
+            {
+                width:37%;
+                background-color: #04AA6D;
+                color: white;
+                cursor: pointer;
+                padding: 15px 18px;
+                opacity: 0.9;
+            }
+            .registration:hover
+            {
+                opacity:1;
+            }
+            a{
+                color:dodgerblue;
+            }
+            .container-signin{
+                text-align: center;
+                background-color: #f1f1f1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action=action.php>
+            <div class="container">
+                <h1>Registration Form</h1>
+                <P>please fill in this form to creat an account</P>
+                <hr>
+                <label for="email"><b>Enter Email</b></label><br>
+                <input type="text" placeholder="Enter email" id="email" name="email" required><br>
+                <label for="psw"><b>Enter password</b></label><br>
+                <input type="password" placeholder="Enter password"  id="psw" name="psw" required><br>
+                <label for="psw-repeat"><b>Re-enter password</b></label><br>
+                <input type="password" placeholder="Re-enter password" id="psw-repeat" name="psw-repeat" required>
+                <hr>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <button type="submit" class="registration">login</button>
+                <button type="submit" class="registration">Signup</button><br><br>
+               <P>forget password? <a href="#link">click here!!</a></P>
+                <!-- <p>designed by-subash k</p> -->
+            </div>
+            <!-- <div class="container-signin">
+                <p>Already have an account?<a href="#link">sign-in</a></p>
+            </div> -->
+        </form>
+
+
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+                /* padding:20px; */
+                padding: 50 500 10 500;
+                margin:0 25 0 25;
+                color: black;
+                /* border-radius: 25px; */
+                 /* background-image: url('hos2.jpeg'); */
+
+
+            }
+            *{
+                box-sizing: border-box;
+                border-radius: 20px;
+            }
+            .container
+            {
+                padding: 16px;
+                background-color: white;
+                /* border: 3px solid grey; */
+                box-shadow:0 0 5px 5px rgb(221, 221, 221);
+                
+            }
+            input[type=text],input[type=password],#disease,input[type=date],input[type=time]
+            {
+                width: 50%;
+                padding:16px;
+                /* padding:0 30 0 0; */
+                border: none;
+                background: #f1f1f1;
+                margin: 5 0 22 0;
+                
+                /* padding: 0 50 0 50; */
+            }
+            input[type=text]:focus,input[type=password]:focus
+            {
+                background-color: #ddd;
+            }
+            hr{
+                border:1px solid #f1f1f1;
+                margin-bottom:25px;
+                margin-right: 710px;
+
+            }
+            .registration
+            {
+                width:25%;
+                /* background-color: #04AA6D; */
+                background-color:black;
+                color: white;
+                cursor: pointer;
+                padding: 15px 18px;
+                opacity: 0.9;
+        
+            }
+            .registration:hover
+            {
+                opacity:1;
+            }
+            a{
+                color:dodgerblue;
+            
+            }
+            .container-signin{
+                text-align: center;
+                background-color:black;
+            }
+
+
+        </style>
+    </head>
+    <body> 
+
+        <!-- <h1 style="color: blue;">Hospital Mangement system</h1> -->
+        <form action="http://localhost/sample/index4.php/" method="GET">
+            <!-- <div class="container"  style="background-image: url('hos2.jpeg'); opacity:1s;"> -->
+                <div class="container" style="background-color: white;">
+                <h2 style="color:black;">HMS|Book an appoinment</h2>
+                <!-- <P>Please fill in this form to login to your account</P> -->
+                <hr>
+                <label for="name"><b>Enter name</b></label><br>
+                <input type="text" placeholder="Enter name" id="name" name="name" required><br>
+                
+                <label for="disease" style="font-weight: bold;">Choose your problem:</label><br>
+                <select name="disease" id="disease">
+                  <option value="skin">skin problem</option>
+                  <option value="stomac">stomach problem</option>
+                  <option value="ortho">orthology</option>
+                  <option value="cardiology">cardiology</option>
+                  <option value="leg">leg probelm</option>
+                  <option value="lung">lung problem</option>
+                  <option value="kidney">kidnwy problem</option>
+                </select>
+                <br>
+                <label for="fee"><b>Consultation fee</b></label><br>
+                <input type="text" placeholder=""  id="fee" name="fee" value="$200" disabled><br>
+                <label for="date"><b>Enter date</b></label><br>
+                <input type="date" placeholder="Enter date" id="date" name="date" required><br>
+                <label for="time"><b>Enter time</b></label><br>
+                <input type="time" placeholder="Enter time" id="time" name="time" required><br>
+                <!-- <label for="psw-repeat"><b>Re-enter password</b></label><br>
+                <input type="password" placeholder="Re-enter password" id="psw-repeat" name="psw-repeat" required>
+                <p><b>Creat account </b><a href="creat account.html">Creat account</a>.</p> -->
+
+                <button type="submit" class="registration" name="submit">submti</button>
+                <!-- <button onclick="document.location='creat account.html'" type="submit" class="registration"> signup </a></button><br><br> -->
+                <!-- <button class="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
+               <P><b>Forget password?</b> <a href="#link">click here!!</a></P>
+                <!-- <p>designed by-subash k</p> -->
+            </div>
+            <!-- <div class="container-signin">
+                <p>Already have an account?<a href="#link">sign-in</a></p>
+            </div> -->
+        </form>
+
+
+    </body>
+</html>

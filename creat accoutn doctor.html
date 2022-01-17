@@ -1,0 +1,140 @@
+<html>
+    <head><title>creat account|doctor</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(85, 85, 85);
+                /* padding:20px; */
+                padding: 5 500 5 500;
+                margin:0 25 0 25;
+                /* color:black; */
+                color: rgb(0, 0, 0);
+                padding-right: 10px;
+                /* filter: blur(8px); */
+                
+                 /* background-image: url('hos1.jpeg'); */
+                  background-image: url(LOGINBG.jpg);
+                 background-repeat: no-repeat;
+                 background-size: cover;
+            }
+            *{
+                box-sizing: border-box;
+                /* border-radius: 20px; */
+            }
+            .container
+            {
+                padding: 16px;
+                background-color: white;
+                padding-left: 0x;
+                margin-left: 500px;
+                /* border: 3px solid grey; */
+                border-radius: 16px;
+                box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.349);
+                
+
+                
+            }
+            input[type=text],input[type=password],input[type=email]
+            {
+                width: 50%;
+                padding:16px;
+                border: none;
+                background: #f1f1f1;
+                margin: 5 0 22 0;
+                border-radius:100px;
+            }
+            button[type=submit]
+            {
+                border-radius: 10px;
+                /* padding-left: 10px; */
+                /* margin-left: 100px; */
+            }
+            input[type=date]
+            {
+                padding:0 20 0 0;
+                margin-left: 50px;
+                border-radius: 10px;
+            }
+            input[type=text]:focus,input[type=password]:focus
+            {
+                background-color: #ddd;
+            }
+            hr{
+                border:1px solid #f1f1f1;
+                margin-bottom:25px;
+                margin-right: 950px;
+
+            }
+            .registration
+            {
+                width:25%;
+                /* background-color: #04AA6D; */
+                background-color:black;
+                color: white;
+                cursor: pointer;
+                padding: 15px 18px;
+                opacity: 0.9;
+
+            }
+            .registration:hover
+            {
+                opacity:1;
+            }
+            a{
+                color:dodgerblue;
+            }
+            .container-signin{
+                text-align: center;
+                background-color:dodgerblue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action=action.php>
+            
+            <!-- <div class="container"  style="background-image: url('hos2.jpeg'); opacity:1s;"> -->
+                <div class="container" style="background-color: rgba(214, 214, 214, 0.795);">
+                <h1 style="color: rgb(0, 0, 0);">Creat account | Doctor</h1>
+                <P>Please fill in this form to login to your account</P>
+            
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" id="fname" name="fname" required><br>
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" id="lname" name="lname" required><br>
+                <label for="date"><b>DOB</b></label>
+                <input type="date" placeholder="" id="data" name="date" required><br><br>
+
+                <label for="gender"><b>Gender</b></label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label><br>
+
+               <br> <label for="mail"><b>Enter mail</b></label>
+                <input type="text" placeholder="Enter Mail" name="mail" id="mail" required><br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password"  id="psw" name="psw" required><br>
+                <label for="psw-repeat"><b>Re- Enter</b></label>
+                <input type="password" placeholder="Re-enter Password" id="psw-repeat" name="psw-repeat" required>
+                
+                <p><b>Already have an account? </b><a href="dbms UI.html">login</a>.</p>
+
+                <button onclick="document.location='database.html'"type="submit" class="registration">submit</button>
+                <!-- <button type="submit" class="registration"><a href="creat account.html"> signup </a></button><br><br> -->
+                <!-- <button class="registration" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
+               <!-- <P><b>forget password?</b> <a href="#link">click here!!</a></P> -->
+                <!-- <p>designed by-subash k</p> -->
+            </div>
+            <!-- <div class="container-signin">
+                <p>Already have an account?<a href="#link">sign-in</a></p>
+            </div> -->
+            <!-- <button onclick="document.location='database.asp'">HTML Tutorial</button> -->
+
+        </form>
+
+
+    </body>
+</html>
